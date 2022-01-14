@@ -3,8 +3,8 @@ A=imread('cameraman.tif');
 size(A)
 
 % DEFINE THE RESAMPLE SIZE
-Col = 600;
-Row = 600;
+Col = 512;
+Row = 512;
 
 
 %FIND THE RATIO OF THE NEW SIZE BY OLD SIZE
@@ -29,6 +29,6 @@ B = B(IC,:);
 
 
 
-figure,subplot(121),imshow(A);title('BEFORE INTERPOLATION'); axis([0,1024,0,1024]);axis on;
+figure,subplot(121),imshow(A);title('BEFORE INTERPOLATION'); axis([0,512,0,512]);axis on;
 
-subplot(122),imshow(B);title('AFTER INTERPOLATION');  axis([0,1024,0,1024]);axis on;
+subplot(122),imshow(B);title('AFTER INTERPOLATION');  axis([0,512,0,512]);axis on;

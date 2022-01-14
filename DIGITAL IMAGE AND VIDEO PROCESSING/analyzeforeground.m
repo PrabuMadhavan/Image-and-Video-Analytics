@@ -1,0 +1,1 @@
+openExample('images/NonuniformIlluminationExample')
