@@ -11,10 +11,7 @@ title('Thresholded, with holes filled')
 
 L = bwlabel(bw);
 subplot(1,3,3);
-imshow(label2rgb(L, @jet, [.8 .8 .8]))
-title('Label matrix')
+imshow(label2rgb(L, @jet, [.7 .7 .7]))
 %label2rgb function determines the color to assign to each object 
 %based on the number of objects in the label
-%colormap ->https://in.mathworks.com/help/matlab/colors-1.html
-
-
+title('Label matrix')
